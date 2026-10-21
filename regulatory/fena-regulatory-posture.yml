@@ -1,0 +1,16 @@
+generated: '2026-10-20'
+source: https://www.fena.co/useful/privacy-policy
+method: probed
+signals:
+  data_subject_request:
+    - source: https://www.fena.co/useful/privacy-policy
+      http_status: 200
+      fetched: /tmp/fena-privacy.html
+      quote: "You have the right to be forgotten: You can delete your fena account through the app."
+      note: Users can request deletion of their account, fulfilling data subject request rights.
+  subprocessors:
+    - source: https://www.fena.co/useful/privacy-policy
+      http_status: 200
+      fetched: /tmp/fena-privacy.html
+      quote: "We may use suppliers to help us deliver our service, but we restrict their use of data to what you allow us to do and bind them to European data protection rules and to strict confidentiality."
+      note: Indicates use of subprocessors with contractual safeguards.

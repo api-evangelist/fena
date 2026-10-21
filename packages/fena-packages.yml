@@ -1,0 +1,11 @@
+generated: '2026-10-20'
+method: searched
+source: "https://registry.npmjs.org/-/v1/search?text=fena"
+packages:
+  - name: "@fena/ts-sdk"
+    registry: "npm"
+    url: "https://www.npmjs.com/package/@fena/ts-sdk"
+    language: "TypeScript"
+    official: true
+    version: "1.0.0"
+    published: "2022-07-26"

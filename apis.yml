@@ -1,23 +1,76 @@
 aid: fena
+
 name: Fena Labs Ltd
-description: 'Fena Labs Ltd is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/images/MOvni85FmOjGqmlH2HcEhN80eeY.png
+
+description: 'Fena Labs Ltd provides Open Banking payment solutions, enabling merchants to accept bank‑to‑bank transfers, instant payments, and recurring payments via APIs, plugins, and a mobile app. Their platform offers transparent pricing, real‑time transaction monitoring, and tools for finance teams, serving over 2,500 UK merchants with high‑speed, low‑cost payments.'
+
 url: https://raw.githubusercontent.com/api-evangelist/fena/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- Payments
+- OpenBanking
+- FinTech
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/fena-hosts.yml
+- type: Vendors
+  url: vendors/fena-vendors.yml
+- type: SDKs
+  url: packages/fena-packages.yml
+- type: Packages
+  url: packages/fena-packages.yml
+- type: Security
+  url: https://www.fena.co/useful/security
+- type: DomainSecurity
+  url: security/fena-domain-security.yml
 - type: Website
   url: https://fena.co/
+
+- type: DeveloperPortal
+  url: https://toolkit-docs.fena.co/
+- type: Documentation
+  url: https://toolkit-docs.fena.co/
+- type: Support
+  url: https://help.fena.co/support/home
+- type: Blog
+  url: https://www.fena.co/blog
+- type: GitHubOrganization
+  url: https://github.com/fena-co
+- type: Pricing
+  url: https://www.fena.co/pricing
+- type: TermsOfService
+  url: https://www.fena.co/useful/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.fena.co/useful/privacy-policy
+
+apis: []
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
